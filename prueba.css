@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(343deg, yellow 10%, #66a6ff 80%);
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  border: solid gray 1px;
+  padding: 10px;
+}
+
+h2 {
+  color: firebrick;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contenedor {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.libro {
+  text-align: center;
+}
+
+.libro-img {
+  width: 120px;
+  height: auto;
+  transition: transform 1s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.libro-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#destacado {
+  border: solid 3px darkgoldenrod; 
+  padding: 2px;
+}
+
+table {
+  margin: 40px auto;
+  border-collapse: collapse;
+}
+
+table, td {
+  border: 1px solid #333;
+  padding: 8px;
+}
+
+.th {
+  background-color: #191dcf1f;
+  font-weight: bold;
+}
+
+form {
+  text-align: center;
+  max-width: 200px;
+  margin: 100px auto;
+}
+
+h3 {
+  color: #333;
+  text-decoration: underline;
+  text-align: center;
+}
+.collage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  gap: 10px;
+  
+  align-items: flex-start;
+  margin: 40px auto;
+  max-width: 450px;
+}
+
+.foto-img {
+  width: 200px;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  transition: transform 1s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.foto-img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 2px;
+  border-top: 1px solid yellow;
+
+}
+.bib {
+  display: inline-flex;
+}

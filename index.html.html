@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boletín Biblioteca</title>
+  <link rel="stylesheet" href="prueba.css" />
+  <script src="prueba.js"></script>
+</head>
+
+<body>
+  <img src="download.jpg" height="100px" width="100px" style="display: block; margin: 0 auto;" />
+  <h1>Nuevas adquisiciones</h1>
+  <h2>Agosto 2025</h2>
+
+<p id="fecha-hoy" style="text-align: center; color: #555;"></p>
+
+
+  <div class="contenedor">
+    <div class="libro">
+      <a href="https://www.amazon.com/-/es/Holden-Centeno-ebook/dp/B077VXV6MN" target="_blank">
+        <img src="la gran nevada.jpg" alt="El nombre del viento" class="libro-img" title="Haga clic para acceder" />
+      </a>
+      <p>El nombre del viento</p>
+    </div>
+
+    <div class="libro">
+      <a href="https://www.amazon.com/-/es/hombre-ma%CC%81s-rico-Babilonia-Spanish/dp/8477203717" target="_blank">
+        <img src="images.jpeg" alt="El hombre más rico de Babilonia" class="libro-img" title="Haga clic para acceder" />
+      </a>
+      <p>El hombre más rico de Babilonia</p>
+    </div>
+
+    <div class="libro">
+      <img src="images.jpg" alt="Libro sin enlace" class="libro-img" title="haga clic para acceder" />
+      <p>El hombre más rico de Babilonia</p>
+    </div>
+    <div>
+<img src="48 leyes.png" id="destacado" class="libro-img" title="destacado del mes"
+><p>Las 48 leyes del poder</p>
+</div>
+  </div>
+
+<form action="fill" method="post">
+    <input type="text" name="nombre" placeholder="Nombre" required /><br>
+    <input type="number" name="matricula" placeholder="matricula sin guiones" required /><br>
+    <input type="text" placeholder="libro favorito" name="libro_favorito" required /><br>
+    <input type="email" name="email" placeholder="Correo electrónico" required /><br>
+    <button type="submit" >Reservar</button>
+    <p>Subscribete y recibe nuestro boletín mensual con las últimas novedades y recomendaciones de lectura.</p>
+<br><br><br>
+
+
+<section>
+<h3>Actividades agosto 2025</h3>
+<table>
+  <th class="th">Dia <td class="th">  Celebracion <td class="th">Hora</td>
+  </td></th>
+  <tr><td>Sabado 16
+    <td>Dia de la restauracion</td> <td>No laborable</td>
+  </td>
+  <tr><td>domingo 24</td>
+  <td>Celebracion feria del libro </td><td>se celebrará el viernes 22</td></tr>
+  </tr>
+</table>
+</form>
+</section>
+  
+
+
+
+        <div class="testimonios">
+          <h3> testimonios</h3>
+        <img class="foto-img" src="8b0853e4-1fe9-4cce-95fd-84b9e4a945a7.jpg" width="200px" height="150px">
+        <img class="foto-img" src="ae183c1c-93b5-4c47-9e5c-77e7dab3f28c.jpg"  width="100px" height="150px"><br>
+        <img  class="foto-img" src="47f528a4-06b1-4765-9b17-7399757acf4b.jpg" width="100px" height="100px">
+        
+        </div>
+
+
+
+
+    <footer>
+        <p>Boletín Biblioteca - Agosto 2025</p>
+        <p>© 2025 Biblioteca Municipal</p>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const hoy = new Date();
+  const fechaFormateada = hoy.toLocaleDateString("es-DO", {
+    day: "numeric", month: "long", year: "numeric"
+  });
+  document.getElementById("fecha-hoy").textContent = "📆 Hoy es " + fechaFormateada;
+});
+</script>
+      </body>
+</html>
